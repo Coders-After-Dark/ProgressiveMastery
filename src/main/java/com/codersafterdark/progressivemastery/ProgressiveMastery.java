@@ -27,6 +27,7 @@ public class ProgressiveMastery {
     public void preInit(FMLPreInitializationEvent event) {
         logger = event.getModLog();
         proxy.preInit(event);
+        TaskHandler.setupTasks();
     }
 
     @EventHandler
@@ -40,7 +41,6 @@ public class ProgressiveMastery {
     @EventHandler
     public void postInit(FMLPostInitializationEvent event) {
         proxy.postInit(event);
-        TaskHandler.setupTasks();
     }
 
     @EventHandler
