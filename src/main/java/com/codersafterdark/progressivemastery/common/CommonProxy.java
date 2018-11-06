@@ -1,7 +1,7 @@
 package com.codersafterdark.progressivemastery.common;
 
 import com.codersafterdark.progressivemastery.common.tasks.Task;
-import com.codersafterdark.progressivemastery.common.tasks.tasktypes.TaskHandler;
+import com.codersafterdark.progressivemastery.common.tasks.TaskHandler;
 import com.codersafterdark.progressivemastery.utils.configs.PMConfigs;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -19,9 +19,7 @@ public class CommonProxy {
     }
 
     public void postInit(FMLPostInitializationEvent event) {
-        for (Task task : TaskHandler.getTasks()) {
-            MinecraftForge.EVENT_BUS.register(task);
-        }
+
     }
 
     public void serverStart(FMLServerStartingEvent event) {

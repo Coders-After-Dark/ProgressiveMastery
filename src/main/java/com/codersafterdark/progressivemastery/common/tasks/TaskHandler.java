@@ -1,6 +1,7 @@
-package com.codersafterdark.progressivemastery.common.tasks.tasktypes;
+package com.codersafterdark.progressivemastery.common.tasks;
 
 import com.codersafterdark.progressivemastery.common.tasks.Task;
+import net.minecraftforge.common.MinecraftForge;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,5 +24,11 @@ public class TaskHandler {
 
     public static List<Task> getTasks() {
         return tasks;
+    }
+
+    public static void setupTasks() {
+        for (Task task : TaskHandler.getTasks()) {
+            MinecraftForge.EVENT_BUS.register(task);
+        }
     }
 }
