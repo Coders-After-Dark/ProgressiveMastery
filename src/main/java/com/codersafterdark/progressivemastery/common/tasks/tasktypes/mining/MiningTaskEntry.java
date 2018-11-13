@@ -8,8 +8,8 @@ import java.util.Map;
 import java.util.Set;
 
 public class MiningTaskEntry {
-    private Block block;
     private static Map<ResourceLocation, Integer> rewards;
+    private Block block;
 
     public MiningTaskEntry(Block block) {
         this.block = block;

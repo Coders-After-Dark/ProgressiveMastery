@@ -46,7 +46,7 @@ public class MiningTask extends Task {
             for (Block target : blockKeys) {
                 if (target == event.getState().getBlock()) {
                     Map<ResourceLocation, Integer> rewardMap = tasks.get(target);
-                    Set<ResourceLocation> rsSet = rewardMap.keySet() ;
+                    Set<ResourceLocation> rsSet = rewardMap.keySet();
                     for (ResourceLocation skill : rsSet) {
                         //Enter Skill Experience Code Here
                     }

@@ -1,11 +1,9 @@
 package com.codersafterdark.progressivemastery;
 
 import com.codersafterdark.progressivemastery.common.CommonProxy;
-import com.codersafterdark.progressivemastery.common.tasks.Task;
 import com.codersafterdark.progressivemastery.common.tasks.TaskHandler;
 import com.codersafterdark.progressivemastery.utils.configs.PMConfigs;
 import com.codersafterdark.progressivemastery.utils.statics.PMModStatics;
-import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
